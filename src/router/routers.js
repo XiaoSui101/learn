@@ -1,4 +1,5 @@
-import Home from '@/components/HelloWorld.vue'
+import Login from '@/view/login/login'
+import test from '@/view/test'
 
 
 
@@ -7,11 +8,16 @@ import Home from '@/components/HelloWorld.vue'
 export default [
     {
         path: '/',
-        redirect: '/index'
+        redirect: '/login'
     },
     {
-        path: '/index',
-        name: 'home',
-        component: Home
+        path: '/login',
+        name: 'login',
+        component: Login
+    },
+    {
+        path: '/test',
+        name: 'test',
+        component: test
     }
 ]
