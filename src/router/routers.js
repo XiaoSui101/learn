@@ -1,6 +1,3 @@
-import Login from '@/view/login/login'
-import test from '@/view/test'
-
 
 
 
@@ -13,11 +10,16 @@ export default [
     {
         path: '/login',
         name: 'login',
-        component: Login
+        component: () => import('@/view/login/login.vue')
     },
     {
         path: '/test',
         name: 'test',
-        component: test
+        component: () => import('@/view/test.vue')
+    },
+    {
+        path: '/home',
+        name: 'home',
+        component: () => import('@/view/home/home.vue')
     }
 ]
